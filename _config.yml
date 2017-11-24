@@ -1,3 +1,17 @@
 menu:
-  Home: /
-  Archives: /archives
+    Home: /
+    Archives: /archives
+    about: /about
+    tags: /tags
+
+favicon: /favicon.ico
+
+sidebar: left
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+google_analytics:

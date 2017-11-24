@@ -2,6 +2,9 @@ Menu:
   Home: Home
   Archives: Archives
   Github: Github
+  about: about
+  categories: categories
+  tags: tags
 
 Paginator:
   Prev: Prev
