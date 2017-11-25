@@ -1,32 +1,88 @@
-.post {
-    margin: 1em auto;
-    padding: 30px 50px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 2px #ddd;
+@media (min-width: 960px){
+    .post {
+        margin: 1em auto;
+        padding: 30px 50px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 2px #ddd;
+    }
+
+    .posts {
+        .post: first-child {
+            margin-top: 0;
+        }
+        .post-title {
+            font-size: 1.5em;
+            a {color:#368ccb;}
+        }
+        .post-meta {
+            color: #BABABA;
+            .read-more{
+                float: right;
+            }
+        }
+    }
 }
 
-.posts {
-    .post: first-child {
-        margin-top: 0;
-    }
-    .post-title {
-        font-size: 1.5em;
-        
-        .post-title-link {
-            color: #368CCB;
-            text-decoration: none;
-        }
-    }
-
-    .post-content {
-        .a {
-            color: #368CCB;
-            text-decoration: none;
-        }
+@media (min-width: 330px) and (max-width: 959px){
+    .post {
+        margin: 1em auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 25px;
+        padding-right: 25px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 2px #ddd;
     }
 
-    .post-meta {
-        color: #BABABA;
+    .posts {
+        .post: first-child {
+            margin-top: 0;
+        }
+        .post-title {
+            font-size: 1.5em;
+            a {color:#368ccb;}
+        }
+        .post-meta {
+            color: #BABABA;
+            .read-more{
+                float: right;
+            }
+        }
+    }
+}
+
+    @media (max-width: 329px){
+    .post {
+        margin: 1em auto;
+        padding-top: 20px;
+        padding-bottom: 70px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 2px #ddd;
+    }
+
+    .posts {
+        .post: first-child {
+            margin-top: 0;
+        }
+        .post-title {
+            font-size: 1.5em;
+            a {color:#368ccb;}
+        }
+        .post-meta {
+            color: #BABABA;
+            float: left;
+            .post-time {
+                float: left;
+                margin-right: 10px;
+            }
+            .read-more {
+                float: left;
+            }
+        }
     }
 }

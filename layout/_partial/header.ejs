@@ -1,9 +1,13 @@
 <header class="header">
     <div class="blog-title">
-        <a href="<%- url_for() %>" class="logo"><%= config.title %></a>
-        <a class="header-avatar" href="/about" title="yi_Xu">
-            <%- image_tag('/img/avatar.png',{alt:'logo头像'}) %>
-        </a>
+        <div class="logo">
+            <a href="<%- url_for() %>" ><%= config.title %></a>
+        </div>
+        <div class="header-avatar">
+            <a href="/about" title="yi_Xu">
+                <%- image_tag('/img/avatar.png',{alt:'logo头像'}) %>
+            </a>
+        </div>
     </div>
     <div class="navbar">
         <nav class="mainnav">

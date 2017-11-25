@@ -3,20 +3,23 @@
         <h2 class="title"><%= page.title %></h2>
         <% if (page.path === "tags/index.html"){ %>
             <div class="post-content">
-            <%- list_categories({
-                depth: 1,
-                show_count: false,
-            }) %>
-            <div class="tags">
-                <%- tagcloud({
-                    min_font: 16, 
-                    max_font: 35, 
-                    amount: 999, 
-                    color: true, 
-                    start_color: 'gray', 
-                    end_color: 'black',
-                }) %>
-            </div>
+                <div class = "categories">
+                    <%- list_categories({
+                        depth: 1,
+                        show_count: false,
+                    }) %>
+                <div class="tags">
+                    <%- tagcloud({
+                        min_font: 16, 
+                        max_font: 35, 
+                        amount: 999, 
+                        color: true, 
+                        start_color: 'gray', 
+                        end_color: 'black',
+                    }) %>
+                </div>
+                <div class "post-content">
+                    <%- page.content %>
             </div>
         <% } else { %>
             <% if (page.path === "about/index.html"){ %>
@@ -25,7 +28,9 @@
                 </div>
             <% } else{ %>
                 <div class="post-meta">
+                    <br>
                     <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
+                    </br>
                     <%- partial('post/tag') %>
                     <%- partial('post/category') %>
                 </div>
