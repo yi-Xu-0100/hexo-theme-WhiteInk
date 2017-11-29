@@ -1,13 +1,14 @@
 <article class="post">
     <div class="post-title">
-        <h2 class="title"><%= page.title %></h2>
         <% if (page.path === "tags/index.html"){ %>
             <div class="post-content">
+                <h2>【故事集锦】</h2>
                 <div class = "categories">
                     <%- list_categories({
                         depth: 1,
                         show_count: false,
                     }) %>
+                <h2>【碎片集锦】</h2>
                 <div class="tags">
                     <%- tagcloud({
                         min_font: 16, 
