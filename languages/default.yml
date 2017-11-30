@@ -6,6 +6,8 @@ Menu:
   categories: categories
   tags: tags
 
+Archive: Archive
+
 Paginator:
   Prev: Prev
   Next: Next

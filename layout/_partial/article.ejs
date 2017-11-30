@@ -28,16 +28,22 @@
                     <%- page.content %>
                 </div>
             <% } else{ %>
-                <div class="post-meta">
-                    <br>
-                    <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
-                    </br>
-                    <%- partial('post/tag') %>
-                    <%- partial('post/category') %>
-                </div>
-                <div class="post-content">
-                    <%- page.content %>
-                </div>
+                <% if (page.path === "/404.html"){ %>
+                    <div class="post-content">
+                        <%- page.content %>
+                    </div>
+                <% } else{ %>
+                    <div class="post-meta">
+                        <br>
+                        <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
+                        </br>
+                        <%- partial('post/tag') %>
+                        <%- partial('post/category') %>
+                    </div>
+                    <div class="post-content">
+                        <%- page.content %>
+                    </div>
+                <% } %>
             <% } %>
         <% } %>
     </div>
