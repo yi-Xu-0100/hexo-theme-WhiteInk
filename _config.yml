@@ -5,13 +5,3 @@ menu:
     tags: /tags
 
 favicon: /favicon.ico
-
-sidebar: left
-widgets:
-- category
-- tag
-- tagcloud
-- archive
-- recent_posts
-
-google_analytics:
