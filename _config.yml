@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+title: WhiteInk
+subtitle: 品水如酒，愚醉……
+description: A website about hexo-theme-WhiteInk.
+author: yi_Xu
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://yi-Xu-0100/hexo-theme-WhiteInk/
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :year-:month-:day/:title/
 permalink_defaults:
 
 # Directory
@@ -25,7 +25,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -42,6 +42,15 @@ highlight:
   line_number: true
   auto_detect: false
   tab_replace:
+markdown:
+  render:
+    html: true
+
+sitemap:
+  path: sitemap.xml
+baudusitemap:
+  path: baudusitemap.xml
+
   
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -53,10 +62,9 @@ index_generator:
   order_by: -date
   
 # Category & Tag
-default_category: uncategorized
+#default_category: uncategorized
 category_map:
 tag_map:
-
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
 ## You can customize the date format as defined in
@@ -72,9 +80,12 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+#theme: landscape
+theme: WhiteInk
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+- type: git
+  repo: git@github.com:yi-Xu-0100/hexo-theme-WhiteInk.git
+  branch: gh-pages
