@@ -63,15 +63,17 @@ donate: false
       	padding: 0;
       	}
 </style>
-<div class="pic">
-<img src="http://oneqpwfpv.bkt.clouddn.com/404.gif" title="lazy">
-</div>
 
-<p class="center">很抱歉，您所访问的地址并不存在…… </p>
+<h2 class="center">很抱歉，您所访问的地址并不存在…… </h2>
+
+<div class="pic">
+<img src="http://oneqpwfpv.bkt.clouddn.com/404.gif" title="sorry :(">
+</div>
 
 <p class="center"><a href="/">回主页</a> · <a href="/about">关于</a> · <a href="/tags">卡片集</a></p>
 
 <p class="center">有问题需要联系博主？ [yi-Xu](https://github.com/yi-Xu-0100) 邮箱地址: azreal0100@gmail.com</p>
+
 <div style="text-align: center">以下是博主喜欢的一些音乐，可以听听，稍作休息……
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="https://music.163.com/outchain/player?type=0&id=39075352&auto=0&height=430"></iframe>
