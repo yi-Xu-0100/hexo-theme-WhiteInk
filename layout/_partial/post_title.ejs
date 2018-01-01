@@ -1,0 +1,17 @@
+<%
+    var post_title = post.title;
+    if(post_title === '')
+    {
+        post_title = __('NoTitle');
+    }
+%>
+<% if(!post.link && post_title){ %>
+    <a class="post-title-link" href="<%- url_for(post.path) %>">
+        <%= post_title %>
+    </a>
+<% }else{ %>
+    <%
+        var link_title = "Link to: " + post.link;
+    %>
+<%- link_to(post.link, link_title, {external: true, class: "post-title-link"})%>
+<% } %>

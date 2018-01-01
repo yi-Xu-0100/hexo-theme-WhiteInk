@@ -2,23 +2,8 @@
     <% page.posts.each(function (post) { %>
         <article class="post">
             <div class="post-title">
-                <%
-                    var title = post.title;
-                    if(title === '')
-                    {
-                        title = __('NoTitle');
-                    }
+                <%- partial('_partial/post_title', {post: post})
                 %>
-                <% if(!post.link && title){ %>
-                    <a class="post-title-link" href="<%- url_for(post.path) %>">
-                        <%= title %>
-                    </a>
-                <% }else{ %>
-                    <%
-                        var link_title = "Link to: " + post.link;
-                    %>
-                <%- link_to(post.link, link_title, {external: true, class: "post-title-link"})%>
-                <% } %>
             </div>
             <div class="post-content">
                 <%- post.excerpt %>

@@ -25,6 +25,7 @@
         }else{
             var full_link = config.url + "\/" + page.path;
         }
+        full_link = full_link.replace('index.html', '')
     %>
     <link rel="canonical" href=<%= full_link %> />
     <%
