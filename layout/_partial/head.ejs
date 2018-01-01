@@ -1,7 +1,32 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <meta name="google-site-verification" content="UxdSbWbRWd87j1ABsTv6PRLV3a126hJe4A0Nyz-4Mj8" />
+    <%if(theme.google_site_verification){%>
+    <meta name="google-site-verification" content=<%=theme.google_site_verification%> />
+    <%}%>
+    <%if(config.author){%>
+    <meta name="author" content=<%=config.author%> />
+    <%}%>
+    <%if(config.description){%>
+    <meta name="description" content=<%=config.description%> />
+    <%}%>
+    <%if(config.subtitle){%>
+    <meta name="subtitle" content=<%=config.subtitle%> />
+    <%}%>
+    <%if(config.language){%>
+    <meta name="language" content=<%=config.language%> />
+    <%}%>
+    <%if(config.timezone){%>
+    <meta name="timezone" content=<%=config.timezone%> />
+    <%}%>
+    <%
+        if (page.permalink ===''){
+            var full_link = config.url + "\/" + page.permalink;
+        }else{
+            var full_link = config.url + "\/" + page.path;
+        }
+    %>
+    <link rel="canonical" href=<%= full_link %> />
     <%
         var title = page.title;
         if (is_archive()){
@@ -27,5 +52,6 @@
     <% if (config.highlight.enable){ %>
         <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
     <% } %>
-    <%- css('css/style') %>
+    <%- css('css/style')
+    %>
 </head>

@@ -1,13 +1,15 @@
 <article class="post">
     <% if (page.path === "tags/index.html" ){ %>
-        <%- partial('_partial/tags', {post: page, index: false}) %>
+        <%- partial('_partial/tags', {post: page, index: false})
+        %>
     <% } else { %>
         <% if (!(page.path === "about/index.html") && !(page.path === "/404.html")){ %>
-            <%- partial('_partial/post-entry', {post: page, index: false}) %>
+            <%- partial('_partial/post', {post: page, index: false})
+            %>
         <% } %>
     <% } %>
     <div class="post-content">
         <%- page.content %>
     </div>
 </article>
-<%- partial('post/nav') %>
+<%- partial('_partial/paginator', {post: page, index: false}) %>

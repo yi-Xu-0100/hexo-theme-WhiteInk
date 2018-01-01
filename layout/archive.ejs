@@ -3,9 +3,24 @@
     <% page.posts.each(function (post) { %>
       <li class="post-item">
         <span class="post-date"><%= date(post.date, "YYYY-MM-DD") %></span>
-        <a class="post-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+        <%
+            var title = post.title;
+            if (title === ''){
+                title = __('NoTitle');
+            }
+        %>
+        <% if(!post.link && title){ %>
+            <a class="post-title" href="<%- url_for(post.path) %>">
+                <%= title %>
+            </a>
+        <% }else{ %>
+            <%
+                var link_title = "Link to: " + post.link;
+            %>
+        <%- link_to(post.link, link_title, {external: true, class: "post-title"})%>
+        <% } %>
       </li>
     <% }) %>
   </ul>
 </section>
-<%- partial('_partial/paginator') %>
+<%- partial('_partial/paginator', {post: page, index: true}) %>
