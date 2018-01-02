@@ -1,58 +1,63 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <%if(theme.google_site_verification){%>
-    <meta name="google-site-verification" content=<%=theme.google_site_verification%> />
+    <%if((config.WhiteInk || theme).google_site_verification){%>
+    <meta name="google-site-verification" content="<%= (config.WhiteInk || theme).google_site_verification %>" />
     <%}%>
     <%if(config.author){%>
-    <meta name="author" content=<%=config.author%> />
+    <meta name="author" content="<%= config.author %>" />
     <%}%>
     <%if(config.description){%>
-    <meta name="description" content=<%=config.description%> />
+    <meta name="description" content="<%= config.description %>" />
     <%}%>
     <%if(config.subtitle){%>
-    <meta name="subtitle" content=<%=config.subtitle%> />
+    <meta name="subtitle" content="<%= config.subtitle %>" />
     <%}%>
     <%if(config.language){%>
-    <meta name="language" content=<%=config.language%> />
+    <meta name="language" content="<%= config.language %>" />
     <%}%>
     <%if(config.timezone){%>
-    <meta name="timezone" content=<%=config.timezone%> />
+    <meta name="timezone" content="<%= config.timezone %>" />
     <%}%>
     <%
-        if (page.permalink ===''){
+        if (page.permalink ===""){
             var full_link = config.url + "\/" + page.permalink;
         }else{
             var full_link = config.url + "\/" + page.path;
         }
-        full_link = full_link.replace('index.html', '')
+        full_link = full_link.replace("index.html", "")
     %>
-    <link rel="canonical" href=<%= full_link %> />
+    <link rel="canonical" href="<%= full_link %>" />
     <%
         var title = page.title;
         if (is_archive()){
-            title = __('Archive');
+            title = __("Archive");
         if (is_month()){
-            title += ': ' + page.year + '/' + page.month;
+            title += ": " + page.year + "\/" + page.month;
         } else if (is_year()){
-            title += ': ' + page.year;
+            title += ": " + page.year;
         }
         } else if (is_category()){
-            title = __('categories') + ': ' + page.category;
+            title = __("categories") + ": " + page.category;
         } else if (is_tag()){
-            title = __('tags') + ': ' + page.tag;
+            title = __("tags") + ": " + page.tag;
+        }
+        if(title){
+            title = title + " | " + config.title;
+        }else{
+            title = config.title;
         }
     %>
-    <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
-    <% if (theme.rss){ %>
-        <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
+    <title><%= title %></title>
+    <% if ((config.WhiteInk || theme).rss){ %>
+        <link rel="alternate" href="<%- (config.WhiteInk || theme).rss %>" title="<%= config.title %>" type="application/atom+xml">
     <% } %>
-    <% if (theme.favicon){ %>
-        <link rel="icon" href="<%- theme.favicon %>">
+    <% if ((config.WhiteInk || theme).favicon){ %>
+        <link rel="icon" href="<%- (config.WhiteInk || theme).favicon %>">
     <% } %>
     <% if (config.highlight.enable){ %>
         <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
     <% } %>
-    <%- css('css/style')
+    <%- css("css/style")
     %>
 </head>

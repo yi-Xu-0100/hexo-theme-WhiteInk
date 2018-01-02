@@ -3,10 +3,9 @@
     <% page.posts.each(function (post) { %>
       <li class="post-item">
         <span class="post-date"><%= date(post.date, "YYYY-MM-DD") %></span>
-        <%- partial('_partial/post_title', {post: post})
-        %>
+        <%- partial("_partial/post_title", {post: post}) %>
       </li>
     <% }) %>
   </ul>
 </section>
-<%- partial('_partial/paginator', {post: page, index: true}) %>
+<%- partial("_partial/paginator", {post: page, index: true}) %>

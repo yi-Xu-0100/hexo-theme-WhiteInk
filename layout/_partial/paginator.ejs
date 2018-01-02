@@ -1,8 +1,8 @@
 <% if (page.total > 1 && index){ %>
     <nav class="page-nav">
         <%- paginator({
-            prev_text: "&laquo;" + __('Paginator.Prev'),
-            next_text: __('Paginator.Next') + "&raquo;"
+            prev_text: "&laquo;" + __("Paginator.Prev"),
+            next_text: __("Paginator.Next") + "&raquo;"
         }) %>
     </nav>
 <% }else{ %>
@@ -11,26 +11,26 @@
             <% if (post.prev){ %>
                 <%
                     var prev_title = post.prev.title;
-                    if (prev_title === '')
+                    if (prev_title === "")
                     {
-                        prev_title = __('NoTitle');
+                        prev_title = __("NoTitle") + " <<";
+                    }else{
+                        prev_title = post.prev.title + " <<";
                     }
                 %>
-                <a href="<%- url_for(post.prev.path) %>" class="article-nav-newer">
-                    <%= prev_title %> <<
-                </a>
+                <a href="<%- url_for(post.prev.path) %>" class="article-nav-newer"><%= prev_title %></a>
             <% } %>
             <% if (post.next){ %>
                 <%
                     var next_title = post.next.title;
-                    if (next_title === '')
+                    if (next_title === "")
                     {
-                    next_title = __('NoTitle');
+                    next_title = ">> " + __("NoTitle");
+                    }else{
+                        next_title = ">> " + post.next.title;
                     }
                 %>
-                <a href="<%- url_for(post.next.path) %>" class="article-nav-older">
-                    >> <%= next_title %>
-                </a>
+                <a href="<%- url_for(post.next.path) %>" class="article-nav-older"><%= next_title %></a>
             <% } %>
         </nav>
     <% } %>

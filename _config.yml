@@ -5,7 +5,9 @@ menu:
     tags: /tags
 
 favicon: /favicon.ico
-
+rss:
 google_site_verification:
+email:
+record:
 
-baidu_push: false
+baidu_push: true

@@ -2,8 +2,7 @@
     <% page.posts.each(function (post) { %>
         <article class="post">
             <div class="post-title">
-                <%- partial('_partial/post_title', {post: post})
-                %>
+                <%- partial("_partial/post_title", {post: post}) %>
             </div>
             <div class="post-content">
                 <%- post.excerpt %>
@@ -12,13 +11,13 @@
                 <span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
                 <%- list_tags(post.tags, {
                     show_count: false,
-                    class: 'post-tags',
-                    style: 'none',
-                    separator: ''
+                    class: "post-tags",
+                    style: "none",
+                    separator: ""
                 }) %>
                 <a class="read-more" href="<%- url_for(post.path) %>"> 阅读全文 </a>
             </div>
         </article>
     <% }) %>
 </section>
-<%- partial('_partial/paginator', {post: page, index: true}) %>
+<%- partial("_partial/paginator", {post: page, index: true}) %>

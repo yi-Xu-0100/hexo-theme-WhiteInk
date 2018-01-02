@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
-    <%- partial('_partial/head')
-    %>
+    <%- partial("_partial/head")%>
     <body>
         <div class="container">
             <div class="wrap">
-                <%- partial('_partial/header', null, {cache: !config.relative_link})
-                %>
+                <%- partial("_partial/header") %>
                 <section class="main"><%- body %></section>
-                <%- partial('_partial/footer', null, {cache: !config.relative_link})
-                %>
+                <%- partial("_partial/footer") %>
             </div>
         </div>
-        <%if(theme.baidu_push){%>
+        <%if((config.WhiteInk || theme).baidu_push){%>
             <script>
                 (function(){
                     var bp = document.createElement('script');

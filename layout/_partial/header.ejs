@@ -1,20 +1,23 @@
 <header class="header">
     <div class="blog-title">
         <div class="logo">
-            <a href="<%- url_for() %>" ><%= config.title %></a>
+            <a href="/" ><%= config.title || config.author %></a>
         </div>
         <div class="header-avatar">
-            <a href="/about" title="yi_Xu">
-                <%- image_tag('/img/avatar.png',{alt:'logo头像'}) %>
+            <a href="/about" title="<%= config.author %>">
+                <img src="/img/avatar.png", alt="logo头像">
             </a>
         </div>
     </div>
     <div class="navbar">
         <nav class="mainnav">
             <ul class="menu">
-                <% for (name in theme.menu) { %>
+                <% for (name in (config.WhiteInk || theme).menu) { %>
                     <li class="menu-item">
-                    <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><%- __('Menu.' + name) %></a>
+                        <%
+                            var menu_name = __("Menu." + name);
+                        %>
+                        <a href="<%- url_for((config.WhiteInk || theme).menu[name]) %>" class="menu-item-link"><%= menu_name %></a>
                     </li>
                 <% } %>
             </ul>
