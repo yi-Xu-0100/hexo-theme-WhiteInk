@@ -12,8 +12,8 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://yi-Xu-0100/hexo-theme-WhiteInk/
-root: /
+url: https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/
+root: /hexo-theme-WhiteInk/
 permalink: :year-:month-:day/:title/
 permalink_defaults:
 
