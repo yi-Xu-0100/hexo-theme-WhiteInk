@@ -13,5 +13,5 @@
     <%
         var link_title = "Link to: " + post.link;
     %>
-<%- link_to(post.link, link_title, {external: true, class: "post-title-link"})%>
+    <a href=<%= post.link %> class="post-title-link" target="_blank" rel="noopener nofollow"><%= link_title %></a>
 <% } %>
