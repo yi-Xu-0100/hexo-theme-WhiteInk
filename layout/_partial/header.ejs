@@ -1,11 +1,11 @@
 <header class="header">
     <div class="blog-title">
         <div class="logo">
-            <a href="/" ><%= config.title || config.author %></a>
+            <a href=<%- url_for("/") %> ><%= config.title || config.author %></a>
         </div>
         <div class="header-avatar">
-            <a href="/about" title="<%= config.author %>">
-                <img src="/img/avatar.png", alt="logo头像">
+            <a href=<%- url_for("/about") %> title="<%= config.author %>">
+                <img src=<%- url_for("img/avatar.png") %> alt="logo头像">
             </a>
         </div>
     </div>
