@@ -67,10 +67,10 @@ donate: false
 <h2 class="center">很抱歉，您所访问的地址并不存在…… </h2>
 
 <div class="pic">
-<img src="http://oneqpwfpv.bkt.clouddn.com/404.gif" title="sorry :(">
+<img src="/hexo-theme-WhiteInk/404/404.gif" title="sorry :(">
 </div>
 
-<p class="center"><a href="/">回主页</a> · <a href="/about">关于</a> · <a href="/tags">卡片集</a></p>
+<p class="center"><a href="/hexo-theme-WhiteInk/">回主页</a> · <a href="/hexo-theme-WhiteInk/about">关于</a> · <a href="/hexo-theme-WhiteInk/tags">卡片集</a></p>
 
 <p class="center">有问题需要联系博主？ [yi-Xu](https://github.com/yi-Xu-0100) 邮箱地址: azreal0100@gmail.com</p>
 
