@@ -1,8 +1,25 @@
 <article class="post">
-    <% if (page.path === "tags/index.html" ){ %>
+    <%
+        var tags_end_url = "tags/index.html";
+        var about_end_url = "about/index.html";
+        var error_end_url = "404.html";
+        var is_tag = false;
+        var is_about = false;
+        var is_404 = false;
+        if (page.path === tags_end_url){
+            is_tag = true;
+        }
+        if (page.path === about_end_url){
+            is_about = true;
+        }
+        if (page.path === error_end_url){
+            is_404 = true;
+        }
+    %>
+    <% if (is_tag){ %>
         <%- partial("_partial/tags", {post: page, index: false}) %>
     <% } else { %>
-        <% if (!(page.path === "about/index.html") && !(page.path === "/404.html")){ %>
+        <% if ((!is_about) && (!is_404)){ %>
             <%- partial("_partial/post", {post: page, index: false}) %>
         <% } %>
     <% } %>
