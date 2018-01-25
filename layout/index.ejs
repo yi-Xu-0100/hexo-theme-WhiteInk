@@ -1,17 +1,17 @@
 <section class="posts">
     <% page.posts.each(function (post) { %>
-        <article class="post">
-            <div class="post-title">
+        <article class="post-card">
+            <div class="card-title">
                 <%- partial("_partial/post_title", {post: post}) %>
             </div>
-            <div class="post-content">
+            <div class="card-content">
                 <%- post.excerpt %>
             </div>
-            <div class="post-meta">
-                <span class="post-time"><%- date(post.date, "YYYY-MM-DD") %></span>
+            <div class="card-meta">
+                <span class="card-time"><time datetime=<%=date(post.date, "YYYY-MM-DD") %>><%- date(post.date, "YYYY-MM-DD") %></time></span>
                 <%- list_tags(post.tags, {
                     show_count: false,
-                    class: "post-tags",
+                    class: "card-tags",
                     style: "none",
                     separator: ""
                 }) %>

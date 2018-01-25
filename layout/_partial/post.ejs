@@ -2,7 +2,12 @@
 <h2 class="title"><%= page.title %></h2>
 </div>
 <div class="post-meta">
-    <span class="post-time"><%- date(page.date, "YYYY-MM-DD") %></span>
-    <%- partial("post/tag") %>
-    <%- partial("post/category") %>
+    <%
+        if(post.updated_at){
+            update_time = post.updated_at;
+        }else{
+            update_time = post.date;
+        }
+    %>
+    <div class="post-time">本文创建于 <time datetime=<%=date(post.date, "YYYY-MM-DD") %>><%- date(post.date, "YYYY-MM-DD") %></time> / 最后更新于 <time datetime=<%=date(update_time, "YYYY-MM-DD") %>><%- date(update_time, "YYYY-MM-DD") %></div>
 </div>

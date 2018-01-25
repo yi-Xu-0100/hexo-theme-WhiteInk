@@ -1,21 +1,27 @@
 .posts {
-    .post: first-child {
-        margin-top: 0;
+    .post-card {
+        margin: 20px 10px;
+        padding: 30px 50px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 3px 2px 8px rgba(0,0,0,0.3);
     }
-    .post-title {
+    .card-title {
         font-size: 1.5em;
         a {
             color: #2988de;
         }
     }
-    .post-meta {
+    .card-meta {
         color: #BABABA;
 
-        .post-tags-link{
-            &:before {
+        .card-tags-link{
+            text-overflow: ellipsis;
+        }
+        .card-tags-link:before {
                 content: " #";
             }
-        }
+        
         .read-more{
             float: right;
         }
