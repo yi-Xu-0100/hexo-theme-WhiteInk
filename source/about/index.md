@@ -4,7 +4,7 @@ date: 2017-10-22 21:37:49
 comments: false
 ---
 
-## 【关于 - [yi_Xu](mailto:azreal0100@gmail.com)】
+## 关于 - yi_Xu
 
 + 解语：品水如酒，愚醉……
 
@@ -12,7 +12,7 @@ comments: false
 
 + mail: [azreal0100@gmail.com](mailto:azreal0100@gmail.com)
 
-## 【关于 - [逸絮居](https://www.yixuju.com)】
+## 关于 - 逸絮居
 
 ### 2017.11.25
 
@@ -24,7 +24,7 @@ comments: false
 
 ### 2017.11.15
 
-工信部备案成功，备案号：[鲁ICP备17049362](www.miitbeian.gov.cn) 。
+工信部备案成功，备案号：[鲁ICP备17049362号](www.miitbeian.gov.cn) 。
 
 ### 2017.10.23
 
