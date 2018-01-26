@@ -338,6 +338,17 @@ a:-webkit-any-link:hover {
     color: #ccc;
     line-height: 22.400000000000002px;
   }
+  .post .post-content .highlight table {
+    margin: 0;
+    width: auto;
+  }
+  .post .post-content .highlight td {
+    border: none;
+    padding: 0;
+  }
+  .post .post-content .highlight tr {
+    text-align: inherit;
+  }
   .post .post-content pre {
     border: none;
     margin: 0;
