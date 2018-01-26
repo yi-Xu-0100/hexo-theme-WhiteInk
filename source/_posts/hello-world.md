@@ -3,7 +3,7 @@ title: Hello World
 date: 2017-3-21 09:17:43
 categories: 其他分享
 tags: [Hexo,Yelee,Simiki,Github]
-updated_at: 
+updated_at: 2018-1-26 12:17:21
 ---
 这本是`Hexo`搭建博客时自动生成的页面，我将其搬运到我的[`Wiki`](https://wiki.yixuju.cn/Introduction/getting-started-for-hexo.html)(暂已弃用)中，并在此处填写我的填坑之旅。
 <!--more-->
