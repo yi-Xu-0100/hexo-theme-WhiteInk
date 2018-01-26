@@ -1,0 +1,111 @@
+h1 {
+    font-size: 24px;
+    padding-left: 5px;
+    text-align: center;
+}
+h2 {
+    font-size: 22px;
+    padding:10px 0 0 0;
+    border-bottom: 2px solid rgba(0,0,0,1);
+}
+
+h3 {
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+    padding-left: 5px;
+    border-left: 5px solid rgba(0,0,0,1);
+}
+h4 {
+    font-size: 18px;
+    margin: 20px 0;
+    padding-left: 5px;
+    border-left: 2.5px solid rgba(0,0,0,0.8);
+}
+h5 {
+    font-size: 17px;
+    padding-left: 1px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+h6 {
+    font-size: 16px;
+    padding-left: 1px;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+p {
+    margin: 10px 0;
+    
+}
+
+blockquote {
+    margin: 0;
+    padding: 10px;
+    border-left: 5px solid rgba(0,0,0,0.4);
+    background-color: rgba(224,224,224,0.5);
+}
+ul {
+    padding: 0px 0 0px 20px;
+    margin: 0;
+}
+li {
+    display: list-item;
+    padding: 2px 0 2px 0;
+    margin: 0;
+}
+
+cite::before{
+    content: "——";
+    padding: 0 8px;
+    font-style: italic;
+}
+
+a {
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+    color: #2988de;
+    &:hover {
+        border-bottom: 3px solid #2988de;
+    }
+}
+
+.pullquote.left {
+    border: none;
+    margin: 0 1em 0 0.5em;
+    width: 45%;
+    float: left;
+}
+
+.pullquote.right {
+    border: none;
+    margin: 0 0.5em 0 1em;
+    width: 45%;
+    float: right;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    vertical-align: middle;
+
+    th {
+        text-align: center;
+        background: #333;
+        color: #EEE;
+        padding: 5px 8px;
+        border: 1px solid #ddd;
+    }
+
+    td {
+        padding: 5px 8px;
+        border: 1px solid #ddd;
+    }
+
+    tr {
+        text-align: center;
+    }
+    tr:nth-child(2n){
+        background-color: #f2f2f2;
+    }
+}
