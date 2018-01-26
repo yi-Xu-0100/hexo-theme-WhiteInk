@@ -1,4 +1,5 @@
-// https://github.com/chriskempson/tomorrow-theme
+/* https://github.com/chriskempson/tomorrow-theme */
+
 highlight-background = #2d2d2d
 highlight-current-line = #393939
 highlight-selection = #515151
@@ -12,115 +13,142 @@ highlight-aqua = #66cccc
 highlight-blue = #6699cc
 highlight-purple = #cc99cc
 
-pre, code
-font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace
-code
-background: #eee
-text-shadow: 0 1px #fff
-padding: 0 0.3em
-pre
-  background: highlight-background
-  margin: 0
-  padding: 15px 20px
-  border-style: solid
-  border-color: #ddd
-  border-width: 1px 0
-  overflow: auto
-  color: highlight-foreground
-  line-height: 14px * 1.6em
-code
-  background: #FFFFFF
-  text-shadow: 0 1px #fff
-  border: 1px solid lightgray
-  border-radius: 3px
-  padding: 1px 0.3em
-.highlight
-  background: highlight-background
-  margin: 0
-  padding: 15px 20px
-  border-style: solid
-  border-color: #ddd
-  border-width: 1px 0
-  overflow: auto
-  color: highlight-foreground
-  line-height: 14px * 1.6em
-  table
-    margin: 0
-    width: auto
-  td
-    border: none
-    padding: 0
-  tr
-    text-align: inherit
-  
-pre
-  border: none
-  margin: 0
-  padding: 0
-figcaption
-  width: 100%
-  font-size: 0.85em
-  color: highlight-comment
-  line-height: 1em
-  margin-bottom: 1em
-  a
-    float: right
-    color: #FFFFFF
-    &:hover
-      color: #2988de
-.gutter pre
-  color: #666
-  font-size: 0.85em
-  text-align: right
-  padding-right: 20px
-.line
-  height: 14px * 1.6em
-.line.marked
-  background: highlight-selection
-.gist
-margin: 0
-border-style: solid
-border-color: #ddd
-border-width: 1px 0
-background: highlight-background
-padding: 15px 20px 15px 0
-.gist-file
-  border: none
-  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace
-  margin: 0
-  .gist-data
-    background: none
-    border: none
-    .line-numbers
-      color: #666
-      font-size: 0.85em
-      background: none
-      border: none
-      padding: 0 20px 0 0
-    .line-data
-      padding: 0 !important
-  .highlight
-    margin: 0
-    padding: 0
-    border: none
-  .gist-meta
-    background: highlight-background
-    color: highlight-comment
-    font: 0.85em -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif
-    text-shadow: 0 0
-    padding: 0
-    margin-top: 1em
-    margin-left: 20px
-    a
-      color: #258fb8
-      font-weight: normal
-      &:hover
-        text-decoration: underline
+pre, code{
+    font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+}
 
+pre{
+    background: #2d2d2d;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    color: #cccccc;
+}
+
+code{
+    background: #fff
+    border: 0.0625em solid #333; /* 1px */
+    border-radius: 3px; 
+    padding: 0 0.0625em; /* 1px */
+    margin: 0 0.0625em; /* 1px */
+}
+
+.highlight{
+    font-size: 1rem; /* 16px */
+    background: #2d2d2d;
+    margin: 0;
+    padding: 0.9375em 1.25em; /* 15px 20px */
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 0.0625em 0; /* 1px */
+    overflow: auto;
+    color: #cccccc;
+
+    table {
+        margin: 0;
+        width: auto;
+    }
+
+    td {
+        border: none;
+        padding: 0;
+    }
+
+    tr {
+        text-align: inherit;
+    }
+}
+
+.line, figcaption, highlight, code, pre{
+    line-height: 1.5;
+}
+
+figcaption{
+    width: 100%;
+    color: #999999;
+    margin-bottom: 1em;
+
+    a{
+        float: right;
+        color: #FFFFFF;
+    }
+
+    a:hover{
+        color: #2988de;
+    }
+}
+
+.gutter pre{
+    color: #666;
+    text-align: right;
+    padding-right: 1.25em; /* 20px */
+}
+
+.line.marked{
+  background: #515151;
+}
+
+.gist{
+    margin: 0;
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 1px 0;
+    background: #2d2d2d;
+    padding: 15px 20px 15px 0;
+
+    .gist-file{
+        border: none;
+        font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+        margin: 0;
+
+        .gist-data{
+            background: none;
+            border: none;
+
+            .line-numbers{
+                color: #666;
+                font-size: 0.85em;
+                background: none;
+                border: none;
+                padding: 0 20px 0 0;
+            }
+
+            .line-data{
+                padding: 0 !important;
+            }
+        }
+
+        .highlight{
+            margin: 0
+            padding: 0
+            border: none
+        }
+
+        .gist-meta{
+            background: #2d2d2d;
+            color: #999999;
+            font: 0.85em -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+            text-shadow: 0 0;
+            padding: 0;
+            margin-top: 1em;
+            margin-left: 20px;
+
+            a{
+                color: #258fb8;
+                font-weight: normal;
+            }
+
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
 pre
   .comment
   .title
-    color: highlight-comment
+    color: #999999
   .variable
   .attribute
   .tag
@@ -133,27 +161,27 @@ pre
   .css .id
   .css .class
   .css .pseudo
-    color: highlight-red
+    color: #f2777a
   .number
   .preprocessor
   .built_in
   .literal
   .params
   .constant
-    color: highlight-orange
+    color: #f99157
   .class
   .ruby .class .title
   .css .rules .attribute
-    color: highlight-green
+    color: #99cc99
   .string
   .value
   .inheritance
   .header
   .ruby .symbol
   .xml .cdata
-    color: highlight-green
+    color: #99cc99
   .css .hexcolor
-    color: highlight-aqua
+    color: #66cccc
   .function
   .python .decorator
   .python .title
@@ -162,7 +190,7 @@ pre
   .perl .sub
   .javascript .title
   .coffeescript .title
-    color: highlight-blue
+    color: #6699cc
   .keyword
   .javascript .function
-    color: highlight-purple
+    color: #cc99cc

@@ -1,84 +1,93 @@
+h6, p, blockquote, ul, li, cite, a, table, th, td, tr, code, time, article,body, pre{
+    font-size: 1rem; /* 16px */
+}
 h1 {
-    font-size: 24px;
-    padding-left: 5px;
+    font-size: 1.5rem; /* 24px */
+    margin: 1em 0; /* 24px */
     text-align: center;
 }
 h2 {
-    font-size: 22px;
-    padding:10px 0 0 0;
-    border-bottom: 2px solid rgba(0,0,0,1);
+    font-size: 1.375rem; /* 22px */
+    padding:0.4545em 0 0 0; /* 10px */
+    border-bottom: 0.0909em solid rgba(0, 0, 0, 1); /* 2px */
 }
 
 h3 {
-    font-size: 20px;
-    margin: 20px 0 20px 0;
-    padding-left: 5px;
-    border-left: 5px solid rgba(0,0,0,1);
+    font-size: 1.25rem; /* 20px */
+    margin: 1em 0 1em 0; /* 20px */
+    padding-left: 0.25em; /* 5px */
+    border-left: 0.25em solid rgba(0, 0, 0, 1); /* 5px */
 }
 h4 {
-    font-size: 18px;
-    margin: 20px 0;
-    padding-left: 5px;
-    border-left: 2.5px solid rgba(0,0,0,0.8);
+    font-size: 1.125rem; /* 18px */
+    margin: 1.1111em 0; /* 20px */
+    padding-left: 0.2777em; /* 5px */
+    border-left: 0.1388em solid rgba(0, 0, 0, 0.8); /* 2.5px */
 }
 h5 {
-    font-size: 17px;
-    padding-left: 1px;
-    margin: 20px 0;
+    font-size: 1.0625rem; /* 17px */
+    padding-left: 0.0588em; /* 1px */
+    margin: 1.1764em 0; /* 20px */
     font-weight: bold;
 }
 h6 {
-    font-size: 16px;
-    padding-left: 1px;
-    margin: 20px 0;
+    padding-left: 0.0625em; /* 1px */
+    margin: 1.25em 0; /* 20px */
     font-weight: bold;
 }
 
 p {
-    margin: 10px 0;
+    margin: 0.625em 0; /* 10px */
     
 }
 
 blockquote {
     margin: 0;
-    padding: 10px;
-    border-left: 5px solid rgba(0,0,0,0.4);
-    background-color: rgba(224,224,224,0.5);
+    padding: 0.625em; /* 10px */
+    border-left: 0.3125em solid rgba(0, 0, 0, 0.4); /* 5px */
+    background-color: rgba(224, 224, 224, 0.5);
 }
 ul {
-    padding: 0px 0 0px 20px;
+    padding: 0 0 0 1.25em; /* 20px */
     margin: 0;
 }
 li {
     display: list-item;
-    padding: 2px 0 2px 0;
+    padding: 0.125em 0 0.125em 0; /* 2px */
     margin: 0;
 }
 
-cite::before{
+cite::before {
     content: "——";
-    padding: 0 8px;
+    padding: 0 0.5em; /* 8px */
     font-style: italic;
 }
 
 a {
-    border-bottom: 1px solid rgba(0,0,0,0.6);
+    text-decoration: none;
+    border-bottom: 0.0625em solid rgba(0, 0, 0, 0.6); /* 1px */
     color: #2988de;
-    &:hover {
-        border-bottom: 3px solid #2988de;
-    }
+    cursor: pointer;
+    transition: 0.2s linear 0.01s;
+    -moz-transition: 0.2s linear 0.01s; /* Firefox 4 */
+    -webkit-transition: 0.2s linear 0.01s; /* Safari and Chrome */
+    -o-transition: 0.2s linear 0.01s; /* Opera */
+}
+
+a:hover {
+    border-bottom: 0.1875em solid #2988de; /* 3px */
 }
 
 .pullquote.left {
     border: none;
-    margin: 0 1em 0 0.5em;
+    margin: 0 1em 0 1em; /* 16px */
     width: 45%;
     float: left;
 }
 
 .pullquote.right {
     border: none;
-    margin: 0 0.5em 0 1em;
+    margin: 0 1em 0 1em; /* 16px */
     width: 45%;
     float: right;
 }
@@ -93,13 +102,13 @@ table {
         text-align: center;
         background: #333;
         color: #EEE;
-        padding: 5px 8px;
-        border: 1px solid #ddd;
+        padding: 1.25em 0.5em; /* 5px 8px */
+        border: 0.0625em solid #ddd; /* 1px */
     }
 
     td {
-        padding: 5px 8px;
-        border: 1px solid #ddd;
+        padding: 1.25em 0.5em; /* 5px 8px */
+        border: 0.0625em solid #ddd; /* 1px */
     }
 
     tr {
