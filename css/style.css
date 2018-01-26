@@ -208,18 +208,18 @@ a:-webkit-any-link:hover {
   }
   .post .post-content h2 {
     font-size: 22px;
-    padding-left: 5px;
-    border-left: 5px solid #000;
+    padding: 10px 0 0 0;
+    border-bottom: 2px solid #000;
   }
   .post .post-content h3 {
     font-size: 20px;
-    margin: 20px 0 20px 32px;
+    margin: 20px 0 20px 0;
     padding-left: 5px;
-    border-left: 2.5px solid rgba(0,0,0,0.8);
+    border-left: 5px solid #000;
   }
   .post .post-content h4 {
     font-size: 18px;
-    margin: 20px 0 20px 16px;
+    margin: 20px 0;
     padding-left: 5px;
     border-left: 2.5px solid rgba(0,0,0,0.8);
   }
@@ -253,6 +253,274 @@ a:-webkit-any-link:hover {
     padding: 2px 0 2px 0;
     margin: 0;
   }
+  .post .post-content cite::before {
+    content: "——";
+    padding: 0 8px;
+    font-style: italic;
+  }
+  .post .post-content a {
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+    color: #2988de;
+  }
+  .post .post-content a:hover {
+    border-bottom: 3px solid #2988de;
+  }
+  .post .post-content .pullquote.left {
+    border: none;
+    margin: 0 1em 0 0.5em;
+    width: 45%;
+    float: left;
+  }
+  .post .post-content .pullquote.right {
+    border: none;
+    margin: 0 0.5em 0 1em;
+    width: 45%;
+    float: right;
+  }
+  .post .post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    vertical-align: middle;
+  }
+  .post .post-content table th {
+    text-align: center;
+    background: #333;
+    color: #eee;
+    padding: 5px 8px;
+    border: 1px solid #ddd;
+  }
+  .post .post-content table td {
+    padding: 5px 8px;
+    border: 1px solid #ddd;
+  }
+  .post .post-content table tr {
+    text-align: center;
+  }
+  .post .post-content table tr:nth-child(2n) {
+    background-color: #f2f2f2;
+  }
+  .post .post-content pre,
+  .post .post-content code,
+  .post .post-content font-family: "Source Code Pro",
+  .post .post-content Consolas,
+  .post .post-content Monaco,
+  .post .post-content Menlo,
+  .post .post-content monospace,
+  .post .post-content background: #eee,
+  .post .post-content text-shadow: 0 1px #fff,
+  .post .post-content padding: 0 0.3em {
+    background: #2d2d2d;
+    margin: 0;
+    padding: 15px 20px;
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 1px 0;
+    overflow: auto;
+    color: #ccc;
+    line-height: 22.400000000000002px;
+  }
+  .post .post-content code {
+    background: #fff;
+    text-shadow: 0 1px #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    padding: 1px 0.3em;
+  }
+  .post .post-content .highlight {
+    background: #2d2d2d;
+    margin: 0;
+    padding: 15px 20px;
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 1px 0;
+    overflow: auto;
+    color: #ccc;
+    line-height: 22.400000000000002px;
+  }
+  .post .post-content pre {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .post .post-content figcaption {
+    width: 100%;
+    font-size: 0.85em;
+    color: #999;
+    line-height: 1em;
+    margin-bottom: 1em;
+  }
+  .post .post-content figcaption a {
+    float: right;
+    color: #fff;
+  }
+  .post .post-content figcaption a:hover {
+    color: #2988de;
+  }
+  .post .post-content .gutter pre {
+    color: #666;
+    font-size: 0.85em;
+    text-align: right;
+    padding-right: 20px;
+  }
+  .post .post-content .line {
+    height: 22.400000000000002px;
+  }
+  .post .post-content .line.marked {
+    background: #515151;
+  }
+  .post .post-content .gist,
+  .post .post-content margin: 0,
+  .post .post-content border-style: solid,
+  .post .post-content border-color: #ddd,
+  .post .post-content border-width: 1px 0,
+  .post .post-content background: highlight-background,
+  .post .post-content padding: 15px 20px 15px 0,
+  .post .post-content .gist-file {
+    border: none;
+    font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+    margin: 0;
+  }
+  .post .post-content .gist .gist-data,
+  .post .post-content margin: 0 .gist-data,
+  .post .post-content border-style: solid .gist-data,
+  .post .post-content border-color: #ddd .gist-data,
+  .post .post-content border-width: 1px 0 .gist-data,
+  .post .post-content background: highlight-background .gist-data,
+  .post .post-content padding: 15px 20px 15px 0 .gist-data,
+  .post .post-content .gist-file .gist-data {
+    background: none;
+    border: none;
+  }
+  .post .post-content .gist .gist-data .line-numbers,
+  .post .post-content margin: 0 .gist-data .line-numbers,
+  .post .post-content border-style: solid .gist-data .line-numbers,
+  .post .post-content border-color: #ddd .gist-data .line-numbers,
+  .post .post-content border-width: 1px 0 .gist-data .line-numbers,
+  .post .post-content background: highlight-background .gist-data .line-numbers,
+  .post .post-content padding: 15px 20px 15px 0 .gist-data .line-numbers,
+  .post .post-content .gist-file .gist-data .line-numbers {
+    color: #666;
+    font-size: 0.85em;
+    background: none;
+    border: none;
+    padding: 0 20px 0 0;
+  }
+  .post .post-content .gist .gist-data .line-data,
+  .post .post-content margin: 0 .gist-data .line-data,
+  .post .post-content border-style: solid .gist-data .line-data,
+  .post .post-content border-color: #ddd .gist-data .line-data,
+  .post .post-content border-width: 1px 0 .gist-data .line-data,
+  .post .post-content background: highlight-background .gist-data .line-data,
+  .post .post-content padding: 15px 20px 15px 0 .gist-data .line-data,
+  .post .post-content .gist-file .gist-data .line-data {
+    padding: 0 !important;
+  }
+  .post .post-content .gist .highlight,
+  .post .post-content margin: 0 .highlight,
+  .post .post-content border-style: solid .highlight,
+  .post .post-content border-color: #ddd .highlight,
+  .post .post-content border-width: 1px 0 .highlight,
+  .post .post-content background: highlight-background .highlight,
+  .post .post-content padding: 15px 20px 15px 0 .highlight,
+  .post .post-content .gist-file .highlight {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  .post .post-content .gist .gist-meta,
+  .post .post-content margin: 0 .gist-meta,
+  .post .post-content border-style: solid .gist-meta,
+  .post .post-content border-color: #ddd .gist-meta,
+  .post .post-content border-width: 1px 0 .gist-meta,
+  .post .post-content background: highlight-background .gist-meta,
+  .post .post-content padding: 15px 20px 15px 0 .gist-meta,
+  .post .post-content .gist-file .gist-meta {
+    background: #2d2d2d;
+    color: #999;
+    font: 0.85em -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    text-shadow: 0 0;
+    padding: 0;
+    margin-top: 1em;
+    margin-left: 20px;
+  }
+  .post .post-content .gist .gist-meta a,
+  .post .post-content margin: 0 .gist-meta a,
+  .post .post-content border-style: solid .gist-meta a,
+  .post .post-content border-color: #ddd .gist-meta a,
+  .post .post-content border-width: 1px 0 .gist-meta a,
+  .post .post-content background: highlight-background .gist-meta a,
+  .post .post-content padding: 15px 20px 15px 0 .gist-meta a,
+  .post .post-content .gist-file .gist-meta a {
+    color: #258fb8;
+    font-weight: normal;
+  }
+  .post .post-content .gist .gist-meta a:hover,
+  .post .post-content margin: 0 .gist-meta a:hover,
+  .post .post-content border-style: solid .gist-meta a:hover,
+  .post .post-content border-color: #ddd .gist-meta a:hover,
+  .post .post-content border-width: 1px 0 .gist-meta a:hover,
+  .post .post-content background: highlight-background .gist-meta a:hover,
+  .post .post-content padding: 15px 20px 15px 0 .gist-meta a:hover,
+  .post .post-content .gist-file .gist-meta a:hover {
+    text-decoration: underline;
+  }
+  .post .post-content pre .comment,
+  .post .post-content pre .title {
+    color: #999;
+  }
+  .post .post-content pre .variable,
+  .post .post-content pre .attribute,
+  .post .post-content pre .tag,
+  .post .post-content pre .regexp,
+  .post .post-content pre .ruby .constant,
+  .post .post-content pre .xml .tag .title,
+  .post .post-content pre .xml .pi,
+  .post .post-content pre .xml .doctype,
+  .post .post-content pre .html .doctype,
+  .post .post-content pre .css .id,
+  .post .post-content pre .css .class,
+  .post .post-content pre .css .pseudo {
+    color: #f2777a;
+  }
+  .post .post-content pre .number,
+  .post .post-content pre .preprocessor,
+  .post .post-content pre .built_in,
+  .post .post-content pre .literal,
+  .post .post-content pre .params,
+  .post .post-content pre .constant {
+    color: #f99157;
+  }
+  .post .post-content pre .class,
+  .post .post-content pre .ruby .class .title,
+  .post .post-content pre .css .rules .attribute {
+    color: #9c9;
+  }
+  .post .post-content pre .string,
+  .post .post-content pre .value,
+  .post .post-content pre .inheritance,
+  .post .post-content pre .header,
+  .post .post-content pre .ruby .symbol,
+  .post .post-content pre .xml .cdata {
+    color: #9c9;
+  }
+  .post .post-content pre .css .hexcolor {
+    color: #6cc;
+  }
+  .post .post-content pre .function,
+  .post .post-content pre .python .decorator,
+  .post .post-content pre .python .title,
+  .post .post-content pre .ruby .function .title,
+  .post .post-content pre .ruby .title .keyword,
+  .post .post-content pre .perl .sub,
+  .post .post-content pre .javascript .title,
+  .post .post-content pre .coffeescript .title {
+    color: #69c;
+  }
+  .post .post-content pre .keyword,
+  .post .post-content pre .javascript .function {
+    color: #c9c;
+  }
   .posts .post-card {
     margin: 20px 10px;
     padding: 30px 50px;
@@ -265,6 +533,105 @@ a:-webkit-any-link:hover {
   }
   .posts .card-title a {
     color: #2988de;
+  }
+  .posts .card-content h1 {
+    font-size: 24px;
+    padding-left: 5px;
+    text-align: center;
+  }
+  .posts .card-content h2 {
+    font-size: 22px;
+    padding: 10px 0 0 0;
+    border-bottom: 2px solid #000;
+  }
+  .posts .card-content h3 {
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+    padding-left: 5px;
+    border-left: 5px solid #000;
+  }
+  .posts .card-content h4 {
+    font-size: 18px;
+    margin: 20px 0;
+    padding-left: 5px;
+    border-left: 2.5px solid rgba(0,0,0,0.8);
+  }
+  .posts .card-content h5 {
+    font-size: 17px;
+    padding-left: 1px;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  .posts .card-content h6 {
+    font-size: 16px;
+    padding-left: 1px;
+    margin: 20px 0;
+    font-weight: bold;
+  }
+  .posts .card-content p {
+    margin: 10px 0;
+  }
+  .posts .card-content blockquote {
+    margin: 0;
+    padding: 10px;
+    border-left: 5px solid rgba(0,0,0,0.4);
+    background-color: rgba(224,224,224,0.5);
+  }
+  .posts .card-content ul {
+    padding: 0px 0 0px 20px;
+    margin: 0;
+  }
+  .posts .card-content li {
+    display: list-item;
+    padding: 2px 0 2px 0;
+    margin: 0;
+  }
+  .posts .card-content cite::before {
+    content: "——";
+    padding: 0 8px;
+    font-style: italic;
+  }
+  .posts .card-content a {
+    border-bottom: 1px solid rgba(0,0,0,0.6);
+    color: #2988de;
+  }
+  .posts .card-content a:hover {
+    border-bottom: 3px solid #2988de;
+  }
+  .posts .card-content .pullquote.left {
+    border: none;
+    margin: 0 1em 0 0.5em;
+    width: 45%;
+    float: left;
+  }
+  .posts .card-content .pullquote.right {
+    border: none;
+    margin: 0 0.5em 0 1em;
+    width: 45%;
+    float: right;
+  }
+  .posts .card-content table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    vertical-align: middle;
+  }
+  .posts .card-content table th {
+    text-align: center;
+    background: #333;
+    color: #eee;
+    padding: 5px 8px;
+    border: 1px solid #ddd;
+  }
+  .posts .card-content table td {
+    padding: 5px 8px;
+    border: 1px solid #ddd;
+  }
+  .posts .card-content table tr {
+    text-align: center;
+  }
+  .posts .card-content table tr:nth-child(2n) {
+    background-color: #f2f2f2;
   }
   .posts .card-meta {
     color: #bababa;
