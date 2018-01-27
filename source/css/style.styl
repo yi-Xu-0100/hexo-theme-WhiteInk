@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(224, 224, 224, 1);
+    background-color: #e0e0e0;
     font-size: 1rem;
     line-height: 1.5;
     font-family: "Comic Sans MS", Georgia, "Times New Roman",  "\534E\6587\884C\6977", "\534E\6587\7EC6\9ED1", "\534E\6587\65B0\9B4F", "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", sans-serif; /* 华文行楷: \534E\6587\884C\6977 华文细黑: \534E\6587\7EC6\9ED1 华文新魏: \534E\6587\65B0\9B4F 微软雅黑: \5FAE\8F6F\96C5\9ED1 宋体: \5B8B\4F53 */
@@ -9,10 +9,13 @@ body{
     max-width: 960px;
     margin: 0 auto;
 }
+@media (min-width: 600px){
+    @import "_partial/header/header-media-large";
+}
 
-@import "_partial/header";
 @import  "_partial/element";
 @import  "_partial/highlight";
+@import "_partial/header";
 
 @media (min-width: 960px){
     @import "_partial/post/post-media-large";
@@ -31,7 +34,6 @@ body{
 @import "_partial/archive";
 
 @import "_partial/nav";
-
+@import "_partial/article-nav";
 @import "_partial/footer";
 
-@import "_partial/article-nav";

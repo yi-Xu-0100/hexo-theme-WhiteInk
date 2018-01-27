@@ -1,13 +1,17 @@
 <header class="header">
     <div class="blog-title">
-        <div class="logo">
-            <a href=<%- url_for("/") %> ><%= config.title || config.author %></a>
-        </div>
-        <div class="header-avatar">
-            <a href=<%- url_for("/about") %> title="<%= config.author %>">
-                <img src=<%- url_for("img/avatar.png") %> alt="logo头像">
-            </a>
-        </div>
+        <ul class="logo">
+            <li>
+                <a class="site-title" href=<%- url_for("/") %>>
+                    <%= config.title || config.author %>
+                </a>
+            </li>
+            <li >
+                <a class="author-avatar" href=<%- url_for("/about") %> title="<%= config.author %>">
+                    <img src=<%- url_for("img/avatar.png") %> alt=<%= config.author %> ></img>
+                </a>
+            </li>
+        </ul>
     </div>
     <div class="navbar">
         <nav class="mainnav">

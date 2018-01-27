@@ -1,196 +1,157 @@
 /* https://github.com/chriskempson/tomorrow-theme */
 
-highlight-background = #2d2d2d
-highlight-current-line = #393939
-highlight-selection = #515151
-highlight-foreground = #cccccc
-highlight-comment = #999999
-highlight-red = #f2777a
-highlight-orange = #f99157
-highlight-yellow = #ffcc66
-highlight-green = #99cc99
-highlight-aqua = #66cccc
-highlight-blue = #6699cc
-highlight-purple = #cc99cc
-
-pre, code{
-    font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
-}
-
-pre{
-    background: #2d2d2d;
-    border: none;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-    color: #cccccc;
-}
-
-code{
-    background: #fff
-    border: 0.0625em solid #333; /* 1px */
-    border-radius: 3px; 
-    padding: 0 0.0625em; /* 1px */
-    margin: 0 0.0625em; /* 1px */
-}
-
-.highlight{
-    font-size: 1rem; /* 16px */
-    background: #2d2d2d;
-    margin: 0;
-    padding: 0.9375em 1.25em; /* 15px 20px */
-    border-style: solid;
-    border-color: #ddd;
-    border-width: 0.0625em 0; /* 1px */
-    overflow: auto;
-    color: #cccccc;
-
-    table {
-        margin: 0;
-        width: auto;
-    }
-
-    td {
-        border: none;
-        padding: 0;
-    }
-
-    tr {
-        text-align: inherit;
-    }
-}
-
-.line, figcaption, highlight, code, pre{
-    line-height: 1.5;
-}
-
-figcaption{
-    width: 100%;
-    color: #999999;
-    margin-bottom: 1em;
-
-    a{
-        float: right;
-        color: #FFFFFF;
-    }
-
-    a:hover{
-        color: #2988de;
-    }
-}
-
-.gutter pre{
-    color: #666;
-    text-align: right;
-    padding-right: 1.25em; /* 20px */
-}
-
-.line.marked{
-  background: #515151;
-}
-
-.gist{
-    margin: 0;
-    border-style: solid;
-    border-color: #ddd;
-    border-width: 1px 0;
-    background: #2d2d2d;
-    padding: 15px 20px 15px 0;
-
-    .gist-file{
-        border: none;
+.post-content {
+    pre, code {
         font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+    }
+
+    pre, .highlight {
+        background: #2d2d2d;
+        border: none;
         margin: 0;
+        padding: 0;
+        border-style: solid;
+        border-color: #ddd;
+        border-width: 0.0625em 0; /* 1px */
+        overflow: auto;
+        color: #cccccc;
+        line-height: 1.5;
+        word-wrap: break-word;
+        word-break: normal;
+    }
 
-        .gist-data{
+    code{
+        background: #fff
+        border: 0.0625em solid #333; /* 1px */
+        border-radius: 0.1875em; /* 3px */
+        padding: 0 0.0625em; /* 1px */
+        margin: 0 0.0625em; /* 1px */
+    }
+
+    pre {
+        code {
             background: none;
-            border: none;
-
-            .line-numbers{
-                color: #666;
-                font-size: 0.85em;
-                background: none;
-                border: none;
-                padding: 0 20px 0 0;
-            }
-
-            .line-data{
-                padding: 0 !important;
-            }
-        }
-
-        .highlight{
-            margin: 0
-            padding: 0
-            border: none
-        }
-
-        .gist-meta{
-            background: #2d2d2d;
-            color: #999999;
-            font: 0.85em -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-            text-shadow: 0 0;
+            border: 0;
             padding: 0;
-            margin-top: 1em;
-            margin-left: 20px;
+            margin: 0;
+        }
+    }
 
-            a{
-                color: #258fb8;
-                font-weight: normal;
-            }
+    .highlight{
+        padding: 0.9375em 1.25em; /* 15px 20px 15px */
 
-            a:hover{
-                text-decoration: underline;
-            }
+        pre {
+            border: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        table {
+            margin: 0;
+            width: auto;
+        }
+
+        td {
+            border: 0;
+            padding: 0;
+        }
+
+        tr {
+            text-align: inherit;
+        }
+    }
+
+    .line, figure, figcaption, highlight, code, pre{
+        line-height: 1.5;
+    }
+
+    figure, figcaption{
+        color: #999999;
+        margin-bottom: 1em;
+
+        a{
+            float: right;
+            color: #FFFFFF;
+            border: 0;
+        }
+
+        a:hover{
+            color: #2988de;
+        }
+
+        .gutter pre{
+            color: #666;
+            text-align: right;
+            padding-right: 1.25em; /* 20px */
+        }
+
+        .line.marked{
+          background: #515151;
         }
     }
 }
-pre
-  .comment
-  .title
-    color: #999999
-  .variable
-  .attribute
-  .tag
-  .regexp
-  .ruby .constant
-  .xml .tag .title
-  .xml .pi
-  .xml .doctype
-  .html .doctype
-  .css .id
-  .css .class
-  .css .pseudo
-    color: #f2777a
-  .number
-  .preprocessor
-  .built_in
-  .literal
-  .params
-  .constant
-    color: #f99157
-  .class
-  .ruby .class .title
-  .css .rules .attribute
-    color: #99cc99
-  .string
-  .value
-  .inheritance
-  .header
-  .ruby .symbol
-  .xml .cdata
-    color: #99cc99
-  .css .hexcolor
-    color: #66cccc
-  .function
-  .python .decorator
-  .python .title
-  .ruby .function .title
-  .ruby .title .keyword
-  .perl .sub
-  .javascript .title
-  .coffeescript .title
-    color: #6699cc
-  .keyword
-  .javascript .function
-    color: #cc99cc
+pre{
+    .comment
+    .title {
+        color: #999999;
+    }
+
+    .variable
+    .attribute
+    .tag
+    .regexp
+    .ruby .constant
+    .xml .tag .title
+    .xml .pi
+    .xml .doctype
+    .html .doctype
+    .css .id
+    .css .class
+    .css .pseudo {
+        color: #f2777a;
+    }
+
+    .number
+    .preprocessor
+    .built_in
+    .literal
+    .params
+    .constant {
+        color: #f99157;
+    }
+
+    .class
+    .ruby .class .title
+    .css .rules .attribute {
+        color: #99cc99;
+    }
+
+    .string
+    .value
+    .inheritance
+    .header
+    .ruby .symbol
+    .xml .cdata {
+        color: #99cc99;
+    }
+
+    .css .hexcolor {
+        color: #66cccc;
+    }
+
+    .function
+    .python .decorator
+    .python .title
+    .ruby .function .title
+    .ruby .title .keyword
+    .perl .sub
+    .javascript .title
+    .coffeescript .title {
+        color: #6699cc;
+    }
+
+    .keyword
+    .javascript .function {
+        color: #cc99cc;
+    }
+}
