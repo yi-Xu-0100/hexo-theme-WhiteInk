@@ -33,19 +33,19 @@ Every interaction is both precious and an opportunity to delight.
 
 ### Normal code block
 
-```
+``` hsp
 alert('Hello World!');
 ```
 
 ### With caption
 
-{% codeblock Array.map %}
+{% codeblock Array.map lang:cpp %}
 array.map(callback[, thisArg])
 {% endcodeblock %}
 
 ### With caption and URL
 
-{% codeblock .compact http://underscorejs.org/#compact Underscore.js %}
+{% codeblock .compact lang:ruby http://underscorejs.org/#compact Underscore.js  %}
 .compact([0, 1, false, 2, ‘’, 3]);
 => [1, 2, 3]
 {% endcodeblock %}
