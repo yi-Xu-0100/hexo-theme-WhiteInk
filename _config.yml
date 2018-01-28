@@ -83,19 +83,12 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 #theme: landscape
 theme: WhiteInk
-
-WhiteInk:
-  menu:
-    Home: /
-    Archives: /archives
-    about: /about
-    tags: /tags
-  favicon: /favicon.ico
-  rss:
-  google_site_verification: testconfig
+theme_config:
   email: email@example.com
-  record:
+  google_site_verification: testconfig
   baidu_push: false
+
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
