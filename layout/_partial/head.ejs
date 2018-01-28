@@ -1,8 +1,8 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
-    <%if((config.WhiteInk || theme).google_site_verification){%>
-    <meta name="google-site-verification" content="<%= (config.WhiteInk || theme).google_site_verification %>" />
+    <%if(theme.google_site_verification){%>
+    <meta name="google-site-verification" content="<%= theme.google_site_verification %>" />
     <%}%>
     <%if(config.author){%>
     <meta name="author" content="<%= config.author %>" />
@@ -49,11 +49,11 @@
         }
     %>
     <title><%= title %></title>
-    <% if ((config.WhiteInk || theme).rss){ %>
-        <link rel="alternate" href="<%- (config.WhiteInk || theme).rss %>" title="<%= config.title %>" type="application/atom+xml">
+    <% if (theme.rss){ %>
+        <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
     <% } %>
-    <% if ((config.WhiteInk || theme).favicon){ %>
-        <link rel="icon" href="<%- (config.WhiteInk || theme).favicon %>">
+    <% if (theme.favicon){ %>
+        <link rel="icon" href="<%- theme.favicon %>">
     <% } %>
     <% if (config.highlight.enable){ %>
         <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">

@@ -1,38 +1,24 @@
-body{
+html {
+    font-size: 16px;
+}
+body {
     background-color: #e0e0e0;
     font-size: 1rem;
     line-height: 1.5;
     font-family: "Comic Sans MS", Georgia, "Times New Roman",  "\534E\6587\884C\6977", "\534E\6587\7EC6\9ED1", "\534E\6587\65B0\9B4F", "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", sans-serif; /* 华文行楷: \534E\6587\884C\6977 华文细黑: \534E\6587\7EC6\9ED1 华文新魏: \534E\6587\65B0\9B4F 微软雅黑: \5FAE\8F6F\96C5\9ED1 宋体: \5B8B\4F53 */
     margin: 0;
+    overflow-x: hidden;
 }
 .main {
-    max-width: 960px;
+    max-width: 60em; /* 960px */
     margin: 0 auto;
 }
-@media (min-width: 600px){
-    @import "_partial/header/header-media-large";
-}
-
+@import  "_partial/header";
+@import  "_partial/article";
 @import  "_partial/element";
+@import  "_partial/mobile-navbar";
 @import  "_partial/highlight";
-@import "_partial/header";
-
-@media (min-width: 960px){
-    @import "_partial/post/post-media-large";
-    @import "_partial/posts/posts-media-large";
-}
-
-@media (min-width: 370px) and (max-width: 959px){
-    @import "_partial/post/post-media-medium";
-    @import "_partial/posts/posts-media-medium";
-}
-
-@media (max-width: 370px){
-    @import "_partial/post/post-media-small";
-    @import "_partial/posts/posts-media-small";
-}
 @import "_partial/archive";
-
 @import "_partial/nav";
 @import "_partial/article-nav";
 @import "_partial/footer";

@@ -1,0 +1,102 @@
+#side-menu {
+    display: none;
+}
+
+@media (min-width: 600px){
+    .mobile-navbar, aside {
+        display: none;
+    }
+}
+
+@media (max-width: 599.5px){
+
+    #mobile-navbar {
+        position: absolute;
+        height: 1.875em; /* 30px */
+        padding: 1.5625em 0; /* 25px */
+        right: 0.625em; /* 10px */
+        display: block;
+        z-index: 99;
+
+        .menu-button {
+            border-radius: 4.375em; /* 70px */
+            background: #e0e0e0;
+            position: relative;
+            height: 1.875em; /* 30px */
+            width: 1.875em; /* 30px */
+            float: left;
+            text-align: center;
+            cursor: pointer;
+
+            .mobile-navbar-icon{
+                position: relative;
+                height: 1.875em; /* 30px */
+                width: 1.875em; /* 30px */
+                float: left;
+                text-align: center;
+
+                span {
+                    background: #333;
+                    height: 0.0625em; /* 1px */
+                    position: absolute;
+                    left: calc((100% - 1.25em) / 2); /* 20px */
+                    top: calc((100% - 0.0625em) / 2); /* 1px */
+                    width: 1.25em; /* 20px */
+                    z-index: 10;
+                }
+
+                span:nth-child(1){
+                    transform: translateY(0.375em) rotate(0deg); /* 6px */
+                }
+
+                span:nth-child(3){
+                    transform: translateY(-0.375em) rotate(0deg); /* 6px */
+                }
+            }
+        }
+    }
+    #side-menu:checked + aside {
+        right: 0;
+    }
+
+    aside {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -100%;
+        width: calc(100% - 1.5625em); /* 25px */
+        margin-right: 1.5625em; /* 25px */
+        height: 5em; /* 80px */
+        background: #333;
+        transition: 0.2s ease-out;
+        overflow: hidden;
+
+        h2{
+            font-size: 1rem; /* 16px */
+            color: #e0e0e0;
+            border: 0;
+            padding: 0 0.625em; /* 10px */
+            margin: 0.625em 0 0 0; /* 10px */
+            float: left;
+            width: 100%
+            height: 50%;
+            
+        }
+    }
+
+    .side-ul li {
+        list-style: none;
+        color: #fff;
+        text-align: center;
+        display: inline-block;
+        padding: 0;
+        margin-left: 0.625em; /* 10px */
+    }
+
+    a {
+        text-decoration: none;
+        border: 0;
+    }
+
+
+}

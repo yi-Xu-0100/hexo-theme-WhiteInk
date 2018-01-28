@@ -16,12 +16,12 @@
     <div class="navbar">
         <nav class="mainnav">
             <ul class="menu">
-                <% for (name in (config.WhiteInk || theme).menu) { %>
+                <% for (name in theme.menu) { %>
                     <li class="menu-item">
                         <%
                             var menu_name = __("Menu." + name);
                         %>
-                        <a href="<%- url_for((config.WhiteInk || theme).menu[name]) %>" class="menu-item-link"><%= menu_name %></a>
+                        <a href="<%- url_for(theme.menu[name]) %>" class="menu-item-link"><%= menu_name %></a>
                     </li>
                 <% } %>
             </ul>

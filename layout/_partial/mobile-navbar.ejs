@@ -1,0 +1,23 @@
+<div id="mobile-navbar">
+    <label class="menu-button" for="side-menu">
+        <div class="mobile-navbar-icon icon-out">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </label>
+</div>
+<input type="checkbox" id="side-menu">
+<aside>
+    <h2><%= config.title %> ~ 站点一览</h2>
+    <ul class="side-ul">
+        <% for (name in theme.menu) { %>
+            <li class="side-li">
+                <%
+                    var menu_name = __("Menu." + name);
+                %>
+                <a href="<%- url_for(theme.menu[name]) %>" class="side-menu-item-link"><%= menu_name %></a>
+            </li>
+        <% } %>
+    </ul>
+</aside>
