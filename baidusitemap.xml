@@ -3,8 +3,10 @@
 
 
     
+    
+    
   <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2013-12-25/tag-plugins/</loc>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2013-12-25/tag-plugins/</loc>
     <lastmod>2018-01-27T05:39:41.841Z</lastmod>
     <data>
         <display>
@@ -18,9 +20,8 @@
     </url>
 
     
-    
   <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2017-03-21/hello-world/</loc>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2017-03-21/hello-world/</loc>
     <lastmod>2018-01-26T04:17:24.997Z</lastmod>
     <data>
         <display>
@@ -38,7 +39,7 @@
          
            
              
-              <breadCrumb title="其他分享" url="https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/categories/%E5%85%B6%E4%BB%96%E5%88%86%E4%BA%AB/"/>
+              <breadCrumb title="其他分享" url="https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/categories/%E5%85%B6%E4%BB%96%E5%88%86%E4%BA%AB/"/>
           
         </display>
     </data>
@@ -48,67 +49,7 @@
     
     
   <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2013-12-26/images/</loc>
-    <lastmod>2018-01-18T04:47:22.194Z</lastmod>
-    <data>
-        <display>
-        <title>Images</title>
-        <pubTime>2013-12-26T14:46:49.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2013-12-24/link-post-without-title/</loc>
-    <lastmod>2018-01-18T04:47:22.194Z</lastmod>
-    <data>
-        <display>
-        <title>www.google.com</title>
-        <pubTime>2013-12-24T15:44:13.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2013-12-24/link-post/</loc>
-    <lastmod>2018-01-18T04:47:22.194Z</lastmod>
-    <data>
-        <display>
-        <title>Link Post</title>
-        <pubTime>2013-12-24T15:30:04.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2013-12-24/long-title/</loc>
-    <lastmod>2018-01-18T04:47:22.194Z</lastmod>
-    <data>
-        <display>
-        <title>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</title>
-        <pubTime>2013-12-24T15:31:06.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2013-12-24/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/</loc>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2013-12-24/%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%B9%E3%83%88/</loc>
     <lastmod>2018-01-18T04:47:22.194Z</lastmod>
     <data>
         <display>
@@ -123,7 +64,7 @@
 
     
   <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2013-12-25/no-title/</loc>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2013-12-25/no-title/</loc>
     <lastmod>2018-01-18T04:47:22.194Z</lastmod>
     <data>
         <display>
@@ -138,7 +79,67 @@
 
     
   <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2013-12-24/tags/</loc>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2013-12-24/long-title/</loc>
+    <lastmod>2018-01-18T04:47:22.194Z</lastmod>
+    <data>
+        <display>
+        <title>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam justo turpis, tincidunt ac convallis id.</title>
+        <pubTime>2013-12-24T15:31:06.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2013-12-24/link-post-without-title/</loc>
+    <lastmod>2018-01-18T04:47:22.194Z</lastmod>
+    <data>
+        <display>
+        <title>www.google.com</title>
+        <pubTime>2013-12-24T15:44:13.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2013-12-26/images/</loc>
+    <lastmod>2018-01-18T04:47:22.194Z</lastmod>
+    <data>
+        <display>
+        <title>Images</title>
+        <pubTime>2013-12-26T14:46:49.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2013-12-24/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</loc>
+    <lastmod>2018-01-18T04:47:22.194Z</lastmod>
+    <data>
+        <display>
+        <title>中文測試</title>
+        <pubTime>2013-12-24T15:31:30.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2013-12-24/tags/</loc>
     <lastmod>2018-01-18T04:47:22.194Z</lastmod>
     <data>
         <display>
@@ -159,7 +160,22 @@
 
     
   <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2013-12-25/videos/</loc>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2013-12-24/link-post/</loc>
+    <lastmod>2018-01-18T04:47:22.194Z</lastmod>
+    <data>
+        <display>
+        <title>Link Post</title>
+        <pubTime>2013-12-24T15:30:04.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2013-12-25/videos/</loc>
     <lastmod>2018-01-18T04:47:22.194Z</lastmod>
     <data>
         <display>
@@ -174,22 +190,7 @@
 
     
   <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2013-12-24/%E4%B8%AD%E6%96%87%E6%B8%AC%E8%A9%A6/</loc>
-    <lastmod>2018-01-18T04:47:22.194Z</lastmod>
-    <data>
-        <display>
-        <title>中文測試</title>
-        <pubTime>2013-12-24T15:31:30.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2013-12-25/gallery-post/</loc>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2013-12-25/gallery-post/</loc>
     <lastmod>2018-01-18T04:47:22.179Z</lastmod>
     <data>
         <display>
@@ -204,7 +205,7 @@
 
     
   <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2013-12-24/elements/</loc>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2013-12-24/elements/</loc>
     <lastmod>2018-01-18T04:47:22.163Z</lastmod>
     <data>
         <display>
@@ -218,9 +219,8 @@
     </url>
 
     
-    
   <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2013-12-25/excerpts/</loc>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2013-12-25/excerpts/</loc>
     <lastmod>2018-01-18T04:47:22.163Z</lastmod>
     <data>
         <display>
@@ -235,7 +235,7 @@
 
     
   <url>
-    <loc>https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/2013-12-24/categories/</loc>
+    <loc>https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/2013-12-24/categories/</loc>
     <lastmod>2018-01-18T04:47:22.163Z</lastmod>
     <data>
         <display>
@@ -245,13 +245,13 @@
          
            
              
-              <breadCrumb title="Foo" url="https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/categories/Foo/"/>
+              <breadCrumb title="Foo" url="https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/categories/Foo/"/>
           
              
-              <breadCrumb title="Bar" url="https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/categories/Foo/Bar/"/>
+              <breadCrumb title="Bar" url="https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/categories/Foo/Bar/"/>
           
              
-              <breadCrumb title="Baz" url="https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/hexo-theme-WhiteInk/categories/Foo/Bar/Baz/"/>
+              <breadCrumb title="Baz" url="https://yi-Xu-0100.github.io/hexo-theme-whiteink/hexo-theme-whiteink/categories/Foo/Bar/Baz/"/>
           
         </display>
     </data>
