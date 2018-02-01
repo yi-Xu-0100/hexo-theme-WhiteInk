@@ -5,15 +5,15 @@
 # Site
 title: WhiteInk
 subtitle: 品水如酒，愚醉……
-description: A website about hexo-theme-WhiteInk.
+description: A website about hexo-theme-whiteink.
 author: yi_Xu
 language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://yi-Xu-0100.github.io/hexo-theme-WhiteInk/
-root: /hexo-theme-WhiteInk/
+url: https://yi-Xu-0100.github.io/hexo-theme-whiteink/
+root: /hexo-theme-whiteink/
 permalink: :year-:month-:day/:title/
 permalink_defaults:
 
@@ -93,5 +93,5 @@ theme_config:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
 - type: git
-  repo: git@github.com:yi-Xu-0100/hexo-theme-WhiteInk.git
+  repo: git@github.com:yi-Xu-0100/hexo-theme-whiteink.git
   branch: gh-pages

@@ -16,7 +16,7 @@ comments: false
 
 ### 2017.11.25
 
-正式完成个人主题 [hexo-theme-WhiteInk](https://github.com/yi-Xu-0100/hexo-theme-WhiteInk) 。
+正式完成个人主题 [hexo-theme-whiteink](https://github.com/yi-Xu-0100/hexo-theme-whiteink) 。
 
 ### 2017.11.18
 
